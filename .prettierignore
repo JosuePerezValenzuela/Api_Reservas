@@ -1,0 +1,4 @@
+# Ignorar archivos de migraciones generados automáticamente por TypeORM
+dist
+node_modules
+src/migrations/**
