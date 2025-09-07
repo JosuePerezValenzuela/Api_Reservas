@@ -4,5 +4,10 @@
     "printWidth": 100,
     "trailingComma": "es5",
     "tabWidth": 4,
-    "endOfLine": "lf"
+    "endOfLine": "lf",
+    "bracketSpacing": true,
+    "bracketSameLine": true,
+    "arrowParens": "avoid",
+    "spaceBeforeFunctionParen": true,
+    "proseWrap": "preserve"
 }

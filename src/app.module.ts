@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { envSchema } from './config/env.validation';
 import { LoggerModule } from 'nestjs-pino';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
     imports: [
@@ -26,6 +27,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
             migrations: ['dist/migrations/*.js'],
             logging: ['schema', 'error', 'warn', 'info', 'log', 'migration', 'query'],
         }),
+
+        AuthModule,
     ],
 })
 export class AppModule {}
