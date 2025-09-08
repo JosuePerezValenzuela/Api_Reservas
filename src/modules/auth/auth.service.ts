@@ -31,7 +31,7 @@ export class AuthService {
 
     // Verificar contrasenia con el algoritmo
     private async verifyPassword(hash: string, plain: string, algo: string): Promise<boolean> {
-        if (algo === 'argon2') {
+        if (algo === 'argon2' || algo === 'argon2id') {
             return argon2.verify(hash, plain);
         }
         throw new Error(`Algoritmo de hash no soportado: ${algo}`);
