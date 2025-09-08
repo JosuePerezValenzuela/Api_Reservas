@@ -24,7 +24,8 @@
         "migration:run": "npm run typeorm:ts -- -d ./ormconfig.ts migration:run",
         "migration:revert": "npm run typeorm:ts -- -d ./ormconfig.ts migration:revert",
         "migration:show": "npm run typeorm:ts -- -d ./ormconfig.ts migration:show",
-        "formatTodo": "prettier --write ."
+        "formatTodo": "prettier --write .",
+        "Seed": "dotenv -e .env -- ts-node -r tsconfig-paths/register src/seeds/seed-runner.ts"
     },
     "dependencies": {
         "@nestjs/common": "^11.0.1",
