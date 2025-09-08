@@ -14,17 +14,17 @@ export class AuthPeople {
     email!: string;
 
     @Column({ name: 'password_hash', type: 'text' })
-    passwordhash!: string;
+    passwordHash!: string;
 
     @Column({ name: 'password_algo', type: 'varchar', length: 20, default: 'argon2id' })
-    passwordalgo!: string;
+    passwordAlgo!: string;
 
     @Column({ name: 'is_active', type: 'boolean', default: true })
-    isactive!: boolean;
+    isActive!: boolean;
 
     @Column({ name: 'is_locked', type: 'boolean', default: false })
-    islocked!: boolean;
+    isLocked!: boolean;
 
     @Column({ name: 'failed_attempts', type: 'smallint', default: 0 })
-    failedattempts!: number;
+    failedAttempts!: number;
 }
