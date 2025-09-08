@@ -1,4 +1,3 @@
-import e from "express";
 import { Seeder } from "../seed-runner";
 import * as argon2 from 'argon2';
 
