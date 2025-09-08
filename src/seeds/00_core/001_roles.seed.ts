@@ -7,7 +7,7 @@ export const seedRoles: Seeder = {
         await ds
             .createQueryBuilder()
             .insert()
-            .into('roles')
+            .into('roles', ['role_name'])
             .values([
                 { roles_name: 'COORDINADOR_GENERAL'},
                 { roles_name: 'COORDINADOR'},

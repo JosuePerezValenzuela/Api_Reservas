@@ -31,7 +31,7 @@ export const seedAuthPeople: Seeder = {
                     id_person: '9315951',
                     email: email,
                     password_hash: hash,
-                    password_algo: 'argon2',
+                    password_algo: 'argon2id',
                     is_active: true,
                     is_locked: false,
                     failed_attempts: 0,

@@ -7,7 +7,7 @@ export const seedFaculties: Seeder = {
         await ds
             .createQueryBuilder()
             .insert()
-            .into('faculties')
+            .into('faculties', ['faculty_name', 'active'])
             .values([
                 { faculties_name: 'FCyT', active: true },
                 { faculties_name: 'FCE', active: true },
